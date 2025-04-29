@@ -53,3 +53,15 @@ lightbox.addEventListener('click', (e) => {
     lightbox.style.display = 'none';
   }
 });
+document.querySelectorAll('.artwork').forEach(art => {
+    const img = art.querySelector('img');
+    const title = art.querySelector('.art-info h3')?.textContent || '';
+    const description = art.querySelector('.art-info p')?.textContent || '';
+  
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+      document.getElementById('lightbox-title').textContent = title;
+      document.getElementById('lightbox-description').textContent = description;
+    });
+  });
