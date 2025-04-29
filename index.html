@@ -109,12 +109,54 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <!-- Contact Form Section -->
+<section class="contact-form-section">
+    <div class="container">
+      <h2>Send Me a Message</h2>
+      <form 
+        class="art-contact-form" 
+        action="https://formspree.io/f/mzzrddpd" 
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Enter your name" 
+            required
+          >
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="your.email@example.com" 
+            required
+          >
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            placeholder="What would you like to discuss?" 
+            required
+          ></textarea>
+        </div>
+  
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+  
             </div>
         </div>
     </section>
